@@ -52,6 +52,10 @@ header {
   width: 65rem;
 }
 
+.header-logo {
+  cursor: pointer;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
