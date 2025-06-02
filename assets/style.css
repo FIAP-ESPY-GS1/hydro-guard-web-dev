@@ -4,12 +4,14 @@
   --bg-color: #f9f9f9;
 
   --font-primary: "League Spartan", sans-serif;
-  --font-secondary: "Open Sans", sans-serif;
+  --font-secondary: "League Gothic", sans-serif;
 
+  --color-white: #ffff;
   --color-primary: #005c99;
   --color-text: #4c4c4c;
   --color-dark: #2b2b2b;
   --color-dark-hover: #1f1f1f;
+  --color-light-blue: #2c91d0;
 }
 
 /*  GENERAL  */
@@ -39,7 +41,7 @@ main {
   background-color: var(--color-primary);
   width: 28vw;
   height: 100%;
-  border-radius: 9rem 0rem 0rem 0rem;
+  border-radius: 124px 0px 0px 0px;
   position: fixed;
   right: 0;
   z-index: -1;
@@ -50,6 +52,10 @@ main {
 header {
   position: fixed;
   width: 65rem;
+}
+
+.header-logo {
+  cursor: pointer;
 }
 
 .navbar {
@@ -94,7 +100,7 @@ nav ul li:hover {
   transform: scale(1.07);
 }
 
-/*  HOME  */
+/*  HOME SECTION  */
 
 .home-section {
   height: 100vh;
@@ -122,8 +128,10 @@ nav ul li:hover {
 
 .home-content p {
   font-family: var(--font-secondary);
-  font-size: 1.2rem;
   color: var(--color-text);
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: 100%;
 }
 
 .home-content .app-buttons {
@@ -138,12 +146,12 @@ nav ul li:hover {
   background: var(--color-dark);
   width: 228px;
   height: 74px;
-  color: white;
+  color: var(--color-white);
   font-family: var(--font-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.8rem;
+  border-radius: 8px;
   gap: 1.5rem;
 }
 
@@ -161,6 +169,123 @@ nav ul li:hover {
 
 .home-app-mockup {
   width: 25rem;
+}
+
+/*  FLOODS SECTION  */
+
+.floods-section {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.floods-section h2 {
+  text-transform: uppercase;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 2.1rem;
+  padding: 0 0 2.5rem 0;
+}
+
+.floods-section-content {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.floods-carousel-card {
+  height: 550px;
+  width: 340px;
+  border-radius: 24px;
+  border-radius: 24px;
+  padding: 2rem;
+  color: var(--color-white);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(30, 30, 30, 0.7) 52.88%
+    ),
+    url(img/floods/carousel/carousel_1.png) lightgray 50% / cover no-repeat;
+}
+
+.floods-carousel-card h3 {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.floods-info-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem 4.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.floods-vertical-info-card {
+  width: 279px;
+  height: 330px;
+  border-radius: 24px 86px;
+  background-color: var(--color-light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.floods-vertical-info-card h4 {
+  font-family: var(--font-secondary);
+  color: var(--color-white);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.floods-vertical-info-card p {
+  font-family: var(--font-secondary);
+  color: var(--color-white);
+  font-size: 1.1rem;
+  line-height: 125%;
+  text-align: left;
+}
+
+.floods-vertical-info-card .flood-icon {
+  width: 120px;
+}
+
+.floods-horizontal-info-card {
+  width: 630px;
+  height: 150px;
+  border-radius: 24px;
+  background-color: var(--color-light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+}
+
+.floods-horizontal-info-card p {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+}
+
+.floods-horizontal-info-card p strong {
+  color: var(--color-primary);
+}
+
+.floods-horizontal-info-icon {
+  position: absolute;
+  right: -20px;
+  top: -25px;
+  bottom: -50;
 }
 
 /*  MEDIA QUERY  */
