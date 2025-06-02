@@ -171,6 +171,55 @@
           />
         </div>
       </section>
+      <section class="hydro-purpose-section">
+        <div class="hydro-purpose-content">
+          <div class="hydro-purpose-header">
+            <h1>HydroAlerta +</h1>
+            <h4>Nosso Propósito</h4>
+          </div>
+          <div class="hydro-purpose-content-cards">
+            <div class="hydro-purpose-content-card">
+              <h5>
+                Muitas pessoas acreditam que sabem quais decisões tomar ao
+                enfrentar uma enchente.
+              </h5>
+              <h5>Será que <strong> você </strong> sabe?</h5>
+              <p>
+                Nosso objetivo é que toda a população esteja bem informada.
+                <br /><br />
+                Confira ao lado um breve Quiz que criamos sobre o assunto e
+                teste o seu conhecimento.
+              </p>
+            </div>
+            <div>
+              <div class="quiz-container">
+                <div id="quiz">
+                  <div class="question" id="question"></div>
+                  <div class="options">
+                    <button
+                      class="option"
+                      id="opt0"
+                      onclick="selectOption(0)"
+                    ></button>
+                    <button
+                      class="option"
+                      id="opt1"
+                      onclick="selectOption(1)"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+              <div id="result-container" style="display: none">
+                <div class="result-label">SUA PONTUAÇÃO FINAL FOI DE:</div>
+                <div class="score-box">
+                  <div class="score-number" id="score">0</div>
+                  <div class="score-total">DE UM TOTAL DE 10 PONTOS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
   <script src="assets/script.js"></script>
