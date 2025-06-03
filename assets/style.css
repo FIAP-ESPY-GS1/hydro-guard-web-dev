@@ -557,6 +557,125 @@ nav ul li:hover {
   font-size: 2rem;
 }
 
+/*  HYDRO PERSON IMPACT SECTION  */
+
+.hydro-person-impact-section {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.hydro-person-impact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hydro-person-impact-content h2 {
+  text-transform: uppercase;
+  font-family: var(--font-primary);
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hydro-person-impact-cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.hydro-person-impact-card-container {
+  height: 33rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hydro-person-impact-card-1:nth-of-type(1) {
+  border-radius: 24px;
+  background: var(--color-light-blue-2);
+  height: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.hydro-person-impact-card-1:nth-of-type(1) h3 {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+}
+
+.hydro-person-impact-card-1:nth-of-type(2) {
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    var(--color-light-blue-2) 0%,
+    var(--color-dark-blue) 100%
+  );
+  height: 19rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.hydro-person-impact-card-1:nth-of-type(2) h3 {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1.2rem 0px;
+}
+
+.hydro-person-impact-card-1:nth-of-type(2) p {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 0.8rem;
+}
+
+.hydro-person-impact-card-2 {
+  border-radius: 24px;
+  background: url("./img/impact/hydro_banner.png");
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-position: center center;
+}
+
+.hydro-person-impact-card-3:nth-of-type(1) {
+  border-radius: 24px;
+  background: var(--color-light-blue-2);
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.hydro-person-impact-card-3:nth-of-type(1) h3 {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1.2rem 0px;
+}
+
+.hydro-person-impact-card-3:nth-of-type(1) p {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-size: 0.8rem;
+}
+
 /*  MEDIA QUERY  */
 
 @media (min-width: 1500px) {
@@ -567,9 +686,12 @@ nav ul li:hover {
     height: 88vh;
   }
   .hydro-alert-section {
-    height: 88vh;
+    height: 85vh;
   }
   .hydro-purpose-section {
+    height: 85vh;
+  }
+  .hydro-person-impact-section {
     height: 85vh;
   }
 }
