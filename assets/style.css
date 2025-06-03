@@ -194,18 +194,21 @@ nav ul li:hover {
 }
 
 .floods-carousel-card {
-  height: 550px;
-  width: 340px;
+  width: 35rem;
+  height: 33.5rem;
   border-radius: 24px;
-  border-radius: 24px;
-  padding: 2rem;
-  color: var(--color-white);
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(30, 30, 30, 0.7) 52.88%
-    ),
-    url(img/floods/carousel/carousel_1.png) lightgray 50% / cover no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.floods-carousel-card .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .floods-carousel-card h3 {
@@ -288,73 +291,42 @@ nav ul li:hover {
   bottom: -50;
 }
 
-/*  HYDRO ALERTA + SECTION  */
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
 
-.hydro-alert-section {
-  height: 100vh;
-  max-height: 100vh;
+.overlay {
+  position: absolute;
   width: 100%;
+  padding: 20px;
+  color: white;
+  z-index: 2;
 }
 
-.hydro-alert-content {
-  display: flex;
-  flex-direction: row;
-  gap: 4rem;
-}
-
-.hydro-alert-content-features {
-  display: flex;
-  flex-direction: column;
-}
-
-.hydro-alert-features-images {
-  display: flex;
-  flex-direction: row;
-  gap: 1.7rem 7rem;
-  flex-wrap: wrap;
-  padding: 2rem;
-  align-items: center;
-  justify-content: center;
-  width: 35rem;
-}
-
-.hydro-alert-features-images-info {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 12rem;
-}
-
-.hydro-alert-features-images-info p {
-  color: var(--color-text);
-  text-align: center;
-  font-family: var(--font-secondary);
-  font-size: 1.1rem;
+.overlay h1 {
+  font-family: var(--font-primary);
+  font-weight: 600;
   font-style: normal;
-  font-weight: 600;
-  line-height: 100%;
-}
-
-.hydro-alert-mockup {
-  margin-top: 1rem;
-  width: 428px;
-  height: 600px;
-}
-
-.hydro-alert-content h1 {
   text-transform: uppercase;
-  font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
 }
 
-.hydro-alert-content h4 {
-  text-transform: uppercase;
-  color: var(--color-text);
-  font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: 1.5rem;
+.overlay.top {
+  top: 0;
+}
+
+.overlay.bottom {
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.625rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 20px;
 }
 
 /*  MEDIA QUERY  */
@@ -365,5 +337,29 @@ nav ul li:hover {
   }
   .floods-section {
     height: 88vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .floods-carousel-card {
+    width: 320px;
+    height: 342px;
+  }
+
+  .overlay.top h1 {
+    top: 0;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 60%;
+    overflow: hidden;
+  }
+
+  .logo {
+    height: 16px;
+  }
+
+  .overlay.bottom span {
+    font-size: 14px;
   }
 }
