@@ -43,8 +43,8 @@ main {
 .bg-fixed {
   background-color: var(--color-primary);
   width: 28vw;
-  height: 100%;
-  border-radius: 124px 0px 0px 0px;
+  height: 80%;
+  border-radius: 124px 0px 0px 124px;
   position: absolute;
   right: 0;
   z-index: -1;
@@ -716,6 +716,93 @@ nav ul li:hover {
   font-family: var(--font-secondary);
   font-size: 0.8rem;
 }
+
+/*  HYDRO BENEFITS SECTION  */
+
+
+.hydro-benefits-section {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.hydro-benefits-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hydro-benefits-content h1 {
+  text-transform: uppercase;
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hydro-benefits-content h4 {
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+}
+
+.hydro-benefits-container {
+  background-image: url("./img/benefits/benefits_container.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30rem;
+  position: relative;
+}
+
+.hydro-benefits-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 5.5rem;
+  padding: 3rem;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.hydro-benefits-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 11rem;;
+}
+
+.hydro-benefits-card p {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.hydro-benefits-image {
+  width: 8rem;
+  height: 8rem;
+}
+
+.hydro-benefits-text {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 2rem 0;
+  width: 80%;
+  text-align: right;
+}
+
+.hydro-benefits-logo {
+  position: absolute;
+  bottom: 40px;
+  right: -13px;
+}
+
+.hydro-benefits-logo img {
+  width: 8rem;
+}
+
 
 /*  MEDIA QUERY  */
 
