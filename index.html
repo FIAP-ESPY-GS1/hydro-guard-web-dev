@@ -181,7 +181,104 @@
           </div>
         </div>
       </section>
+      <section class="hydro-alert-section">
+        <div class="hydro-alert-content">
+          <div class="hydro-alert-content-features">
+            <h1>HydroAlerta +</h1>
+            <h4>Como ele funciona</h4>
+            <div class="hydro-alert-features-images">
+              <div class="hydro-alert-features-images-info">
+                <img
+                  src="assets/img/hydroalert/feature_4.svg"
+                  alt="Feature 4"
+                  class="hydro-alert-feature-image"
+                />
+                <p>Alertas de enchentes com base em IA</p>
+              </div>
+              <div class="hydro-alert-features-images-info">
+                <img
+                  src="assets/img/hydroalert/feature_3.svg"
+                  alt="Feature 3"
+                  class="hydro-alert-feature-image"
+                />
+                <p>Mapeamento em tempo real</p>
+              </div>
+              <div class="hydro-alert-features-images-info">
+                <img
+                  src="assets/img/hydroalert/feature_2.svg"
+                  alt="Feature 2"
+                  class="hydro-alert-feature-image"
+                />
+                <p>Dicas de prevenção e segurança personalizadas</p>
+              </div>
+              <div class="hydro-alert-features-images-info">
+                <img
+                  src="assets/img/hydroalert/feature_1.svg"
+                  alt="Feature 1"
+                  class="hydro-alert-feature-image"
+                />
+                <p>Modo Offline com dados salvos</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="assets/img/hydroalert/hydro_alert_mockup.png"
+            alt="HydroAlerta+ Mockup"
+            class="hydro-alert-mockup"
+          />
+        </div>
+      </section>
+      <section class="hydro-purpose-section">
+        <div class="hydro-purpose-content">
+          <div class="hydro-purpose-header">
+            <h1>HydroAlerta +</h1>
+            <h4>Nosso Propósito</h4>
+          </div>
+          <div class="hydro-purpose-content-cards">
+            <div class="hydro-purpose-content-card">
+              <h5>
+                Muitas pessoas acreditam que sabem quais decisões tomar ao
+                enfrentar uma enchente.
+              </h5>
+              <h5>Será que <strong> você </strong> sabe?</h5>
+              <p>
+                Nosso objetivo é que toda a população esteja bem informada.
+                <br /><br />
+                Confira ao lado um breve Quiz que criamos sobre o assunto e
+                teste o seu conhecimento.
+              </p>
+            </div>
+            <div>
+              <div class="quiz-container">
+                <div id="quiz">
+                  <div class="question" id="question"></div>
+                  <div class="options">
+                    <button
+                      class="option"
+                      id="opt0"
+                      onclick="selectOption(0)"
+                    ></button>
+                    <button
+                      class="option"
+                      id="opt1"
+                      onclick="selectOption(1)"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+              <div id="result-container" style="display: none">
+                <div class="result-label">SUA PONTUAÇÃO FINAL FOI DE:</div>
+                <div class="score-box">
+                  <div class="score-number" id="score">0</div>
+                  <div class="score-total">DE UM TOTAL DE 10 PONTOS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
-  <script src="assets/script.js"></script>
+  <script src="assets/carousel.js"></script>
+  <script src="assets/quiz.js"></script>
 </html>
