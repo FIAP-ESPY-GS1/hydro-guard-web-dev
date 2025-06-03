@@ -78,7 +78,7 @@ const quizData = [
 let currentQuestion = 0;
 let score = 0;
 
-function loadQuestion() {
+const loadQuestion = () => {
   if (currentQuestion < quizData.length) {
     const q = quizData[currentQuestion];
 
@@ -102,7 +102,7 @@ function loadQuestion() {
   }
 }
 
-function selectOption(index) {
+const selectOption = (index) => {
   const q = quizData[currentQuestion];
 
   if (index === q.correct) {
@@ -113,7 +113,7 @@ function selectOption(index) {
   loadQuestion();
 }
 
-function showResult() {
+const showResult = () => {
   const resultContainer = document.getElementById("result-container");
   const scoreDisplay = document.getElementById("score");
 
