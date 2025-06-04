@@ -61,10 +61,6 @@
     margin-bottom: 1rem;
   }
 
-  .navbar .header-profile {
-    display: none;
-  }
-
   nav ul li:hover {
     color: var(--bg-color);
     transform: scale(1.03);

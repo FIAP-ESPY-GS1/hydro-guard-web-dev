@@ -68,10 +68,10 @@ header {
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   height: 8rem;
   max-height: 8rem;
+  gap: 2rem;
 }
 
 #hamburger-menu-icon {
@@ -106,20 +106,6 @@ nav ul li {
 nav ul li:hover {
   color: var(--color-primary);
   transform: scale(1.03);
-}
-
-.header-profile {
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
-}
-
-.header-profile img {
-  cursor: pointer;
-}
-
-.header-profile img:hover {
-  transform: scale(1.07);
 }
 
 /*  HOME SECTION  */
