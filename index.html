@@ -8,6 +8,7 @@
 
     <link rel="shortcut icon" href="assets/img/logo_icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/mobile.css">
 </head>
 
 <body>
@@ -15,7 +16,11 @@
     <main>
         <header>
             <div class="navbar">
-                <img src="assets/img/logo.png" alt="Logo Hyrdro Guard" />
+                <img src="assets/img/logo.png" alt="Logo Hyrdro Guard" class="navbar-logo"/>
+                <div class="menu-hamburger">
+                    <i id="hamburger"class="fa-solid fa-bars fa-xl"></i>
+                    <i class="fa-solid fa-xmark fa-2xl fechar" id="fechar"></i>
+                </div>
                 <nav>
                     <ul>
                         <li>Home</li>
@@ -32,10 +37,11 @@
                         <img src="assets/img/home/facebook_icon.svg" alt="Facabook icon" />
                         <img src="assets/img/home/youtube_icon.svg" alt="Youtube icon" />
                     </div>
-                    <img src="assets/img/home/user_icon.svg" alt="User icon" />
+                    <img src="assets/img/home/user_icon.svg" alt="User icon" class="user_icon" />
                 </div>
             </div>
         </header>
+        
         <section class="home-section">
             <div class="home-content">
                 <h1>Proteja-se dos perigos das enchentes</h1>
@@ -59,6 +65,7 @@
         </section>
     </main>
 </body>
+<script src="https://kit.fontawesome.com/6ede03f451.js" crossorigin="anonymous"></script>
 <script src="assets/script.js"></script>
-
+<script src="/assets/hamburgermenu.js"></script>
 </html>
