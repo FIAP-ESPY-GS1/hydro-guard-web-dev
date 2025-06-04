@@ -436,15 +436,17 @@
           <div class="hydro-contact-card">
             <h3>Dúvidas, sugestões ou parcerias?</h3>
             <h6>Nos mande uma mensagem!</h6>
-            <form>
+            <form id="contact-form">
               <div class="hydro-contact-inputs">
                 <input
+                  id="name"
                   type="text"
                   placeholder="Nome Completo"
                   class="hydro-contact-input"
                   required
                 />
                 <input
+                  id="email"
                   type="email"
                   placeholder="seuemailcompleto@exemplo.com.br"
                   class="hydro-contact-input"
@@ -453,6 +455,7 @@
               </div>
               <div class="hydro-contact-inputs">
                 <textarea
+                  id="message"
                   placeholder="Sua Mensagem!"
                   class="hydro-contact-textarea"
                   required
@@ -469,4 +472,5 @@
   </body>
   <script src="assets/carousel.js"></script>
   <script src="assets/quiz.js"></script>
+  <script src="assets/form.js"></script>
 </html>
