@@ -74,19 +74,19 @@ header {
   max-height: 8rem;
 }
 
-#hamburger{
-    color: #043b72;
-    visibility: hidden;
-  }
+#hamburger-menu-icon {
+  color: #043b72;
+  visibility: hidden;
+}
 
-#fechar{
-    color: #fff; 
-    top: 42px; 
-    right: 0px;
-    position: absolute;
-    z-index: 1;
-    display: none;
-    margin-right: 1rem;
+#close-menu-icon {
+  color: #fff;
+  top: 42px;
+  right: 0px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  margin-right: 1rem;
 }
 
 nav ul {
@@ -221,6 +221,7 @@ nav ul li:hover {
   border-radius: 24px;
   overflow: hidden;
   position: relative;
+  z-index: -1;
 }
 
 .floods-carousel-card .slide {
@@ -260,6 +261,7 @@ nav ul li:hover {
   flex-direction: column;
   padding: 2rem;
   gap: 2rem;
+  z-index: -1;
 }
 
 .floods-vertical-info-card h4 {
