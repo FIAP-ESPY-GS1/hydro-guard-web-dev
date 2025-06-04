@@ -100,7 +100,7 @@ const loadQuestion = () => {
   } else {
     showResult();
   }
-}
+};
 
 const selectOption = (index) => {
   const q = quizData[currentQuestion];
@@ -111,7 +111,7 @@ const selectOption = (index) => {
 
   currentQuestion++;
   loadQuestion();
-}
+};
 
 const showResult = () => {
   const resultContainer = document.getElementById("result-container");
@@ -121,6 +121,6 @@ const showResult = () => {
 
   resultContainer.style.display = "block";
   document.querySelector(".quiz-container").style.display = "none";
-}
+};
 
 loadQuestion();
