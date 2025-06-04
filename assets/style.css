@@ -74,6 +74,21 @@ header {
   max-height: 8rem;
 }
 
+#hamburger{
+    color: #043b72;
+    visibility: hidden;
+  }
+
+#fechar{
+    color: #fff; 
+    top: 42px; 
+    right: 0px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    margin-right: 1rem;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -832,7 +847,7 @@ nav ul li:hover {
   width: 8rem;
 }
 
-/*  MEDIA QUERY  */
+/*  MEDIA QUERY  
 
 @media (min-width: 1500px) {
   .bg-fixed {
@@ -874,4 +889,4 @@ nav ul li:hover {
   .overlay.bottom span {
     font-size: 14px;
   }
-}
+} */
