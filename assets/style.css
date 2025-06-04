@@ -1,5 +1,4 @@
 /*  ROOT VARIABLES  */
-
 :root {
   --bg-color: #f9f9f9;
 
@@ -73,6 +72,20 @@ header {
   height: 8rem;
   max-height: 8rem;
 }
+
+#hamburger{
+    color: #043b72;
+    visibility: hidden;
+  }
+
+  #fechar{
+    color: #fff; 
+    top: 42px; 
+    right: 0px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+  }
 
 nav ul {
   display: flex;
@@ -171,7 +184,7 @@ nav ul li:hover {
 .home-content .app-buttons .app-button span {
   font-family: var(--font-secondary);
   width: 95px;
-  font-height: 700;
+  font-weight: 700;
 }
 
 .home-app-mockup {
@@ -638,3 +651,4 @@ nav ul li:hover {
     font-size: 14px;
   }
 }
+
