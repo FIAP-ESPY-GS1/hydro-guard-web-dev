@@ -55,6 +55,7 @@
 
   section {
     width: 88vw !important;
+    padding: 5.5rem 0rem!important;
   }
 
   /* NAVBAR */
@@ -269,7 +270,7 @@
 
   .hydro-person-impact-section {
     height: 100%;
-    margin-bottom: 25%;
+    padding: 0;
   }
 
   .hydro-person-impact-cards {
@@ -281,10 +282,6 @@
   }
 
   /*  HYDRO BENEFITS SECTION  */
-
-  .hydro-benefits-section {
-    margin-bottom: 30%;
-  }
 
   .hydro-benefits-container {
     height: 60rem;
@@ -366,14 +363,14 @@
   }
 
   .hydro-contact-card form input:nth-of-type(1) {
-    width: 18rem;
+    width: 17.5rem;
   }
   .hydro-contact-card form input:nth-of-type(2) {
-    width: 18rem;
+    width: 17.5rem;
   }
 
   .hydro-contact-card form textarea {
-    width: 18rem;
+    width: 17.5rem;
   }
 
   footer {

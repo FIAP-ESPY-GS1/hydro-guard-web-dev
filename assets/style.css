@@ -25,6 +25,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   flex-direction: column;
@@ -47,7 +51,7 @@ main {
 .bg-fixed {
   background-color: var(--color-primary);
   width: 28vw;
-  height: 57%;
+  height: 59%;
   border-radius: 124px 0px 0px 124px;
   position: absolute;
   right: 0;
@@ -60,6 +64,11 @@ button {
 }
 
 /*  HEADER  */
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
 
 header {
   width: 65rem;
@@ -191,6 +200,7 @@ nav ul li:hover {
   height: 100vh;
   max-height: 100vh;
   width: 100%;
+  padding: 10rem 0rem;
 }
 
 .floods-section h2 {
@@ -288,6 +298,7 @@ nav ul li:hover {
   flex-direction: column;
   padding: 2rem;
   position: relative;
+  z-index: -1;
 }
 
 .floods-horizontal-info-card p {
@@ -351,6 +362,7 @@ nav ul li:hover {
   height: 100vh;
   max-height: 100vh;
   width: 100%;
+  padding: 10rem 0rem;
 }
 
 .hydro-alert-content {
@@ -420,6 +432,7 @@ nav ul li:hover {
   height: 100vh;
   max-height: 100vh;
   width: 100%;
+  padding: 10rem 0rem;
 }
 
 .hydro-purpose-content {
@@ -612,6 +625,7 @@ nav ul li:hover {
 .hydro-person-impact-section {
   height: 100vh;
   width: 100%;
+  padding: 10rem 0rem;
 }
 
 .hydro-person-impact-content {
@@ -651,6 +665,7 @@ nav ul li:hover {
   padding: 2rem 2rem 1.5rem 2rem;
   gap: 2.2rem;
   position: relative;
+  z-index: -1;
 }
 
 .hydro-person-impact-logo {
@@ -762,6 +777,7 @@ nav ul li:hover {
   max-height: 100vh;
   width: 100%;
   z-index: -1;
+  padding: 10rem 0rem;
 }
 
 .hydro-benefits-content {
@@ -849,6 +865,8 @@ nav ul li:hover {
   height: 100vh;
   max-height: 100vh;
   width: 100%;
+  padding: 10rem 0rem;
+  margin-bottom: 10rem;
 }
 
 .hydro-benefits-content {
@@ -877,6 +895,7 @@ nav ul li:hover {
   width: 100%;
   height: 30rem;
   position: relative;
+  z-index: -1;
 }
 
 .hydro-benefits-cards {
@@ -1074,11 +1093,11 @@ nav ul li:hover {
   border-radius: 8px;
 }
 
-.hydro-contact-card form input:nth-of-type(1)  {
+.hydro-contact-card form input:nth-of-type(1) {
   width: 25rem;
 }
 
-.hydro-contact-card form input:nth-of-type(2)  {
+.hydro-contact-card form input:nth-of-type(2) {
   width: 33.5rem;
 }
 
@@ -1090,7 +1109,7 @@ nav ul li:hover {
   padding: 0.8rem;
   border: none;
   border-radius: 8px;
-  width: 50rem
+  width: 50rem;
 }
 
 .hydro-contact-card form button {
@@ -1122,5 +1141,3 @@ footer {
   font-family: var(--font-secondary);
   font-size: 1rem;
 }
-
-
