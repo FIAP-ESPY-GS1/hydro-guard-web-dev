@@ -11,45 +11,66 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/mobile.css" />
   </head>
 
   <body>
     <div class="bg-fixed"></div>
-    <main>
-      <header>
-        <div class="navbar">
-          <img
-            src="assets/img/logo.png"
-            alt="Logo Hydro Guard"
-            class="header-logo"
-          />
-          <nav>
-            <ul>
-              <li>Home</li>
-              <li>Enchentes</li>
-              <li>HydroAlerta+</li>
-              <li>Propósito</li>
-              <li>Impacto</li>
-              <li>Benefícios</li>
-            </ul>
-          </nav>
-          <div class="header-profile">
-            <div class="header-social-media-icons">
-              <img
-                src="assets/img/home/instagram_icon.svg"
-                alt="Instagram icon"
-              />
-              <img
-                src="assets/img/home/facebook_icon.svg"
-                alt="Facabook icon"
-              />
-              <img src="assets/img/home/youtube_icon.svg" alt="Youtube icon" />
-            </div>
-            <img src="assets/img/home/user_icon.svg" alt="User icon" />
-          </div>
+
+    <header>
+      <div class="navbar">
+        <img
+          src="assets/img/logo.png"
+          alt="Logo Hydro Guard"
+          class="header-logo"
+        />
+      
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#floods">Enchentes</a></li>
+            <li><a href="#hydro-alert">HydroAlerta+</a></li>
+            <li><a href="#purpose">Propósito</a></li>
+            <li><a href="#impact">Impacto</a></li>
+            <li><a href="#benefits">Benefícios</a></li>
+          </ul>
+        </nav>
+
+        <div class="theme-selector">
+          <button
+            class="theme-dot"
+            id="theme-light"
+            onclick="switchTheme('light')"
+            aria-label="Tema Claro"
+          ></button>
+          <button
+            class="theme-dot"
+            id="theme-dark"
+            onclick="switchTheme('dark')"
+            aria-label="Tema Escuro"
+          ></button>
+          <button
+            class="theme-dot"
+            id="theme-colorblind"
+            onclick="switchTheme('colorblind')"
+            aria-label="Tema Acessível"
+          ></button>
+          <button
+            class="theme-dot"
+            id="theme-earth"
+            onclick="switchTheme('earth')"
+            aria-label="Tema Terra"
+          ></button>
         </div>
-      </header>
-      <section class="home-section">
+
+         <div class="menu-hamburger">
+          <i id="hamburger-menu-icon" class="fa-solid fa-bars fa-xl"></i>
+          <i id="close-menu-icon" class="fa-solid fa-xmark fa-2xl"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="home-section">
         <div class="home-content">
           <h1>Proteja-se dos perigos das enchentes</h1>
           <p>
@@ -80,7 +101,7 @@
           class="home-app-mockup"
         />
       </section>
-      <section class="floods-section">
+      <section id="floods" class="floods-section">
         <h2>Enchentes: O que está em jogo?</h2>
         <div class="floods-section-content">
           <div class="floods-carousel-card">
@@ -181,7 +202,7 @@
           </div>
         </div>
       </section>
-      <section class="hydro-alert-section">
+      <section id="hydro-alert" class="hydro-alert-section">
         <div class="hydro-alert-content">
           <div class="hydro-alert-content-features">
             <h1>HydroAlerta +</h1>
@@ -197,7 +218,7 @@
               </div>
               <div class="hydro-alert-features-images-info">
                 <img
-                  src="assets/img/hydroalert/feature_3.svg"
+                  src="assets/img/hydroalert/feature_2.svg"
                   alt="Feature 3"
                   class="hydro-alert-feature-image"
                 />
@@ -205,7 +226,7 @@
               </div>
               <div class="hydro-alert-features-images-info">
                 <img
-                  src="assets/img/hydroalert/feature_2.svg"
+                  src="assets/img/hydroalert/feature_3.svg"
                   alt="Feature 2"
                   class="hydro-alert-feature-image"
                 />
@@ -228,7 +249,7 @@
           />
         </div>
       </section>
-      <section class="hydro-purpose-section">
+      <section id="purpose" class="hydro-purpose-section">
         <div class="hydro-purpose-content">
           <div class="hydro-purpose-header">
             <h1>HydroAlerta +</h1>
@@ -277,7 +298,7 @@
           </div>
         </div>
       </section>
-      <section class="hydro-person-impact-section">
+      <section id="impact" class="hydro-person-impact-section">
         <div class="hydro-person-impact-content">
           <div class="hydro-person-impact-header">
             <h2>Pessoas Impactadas</h2>
@@ -343,7 +364,7 @@
           </div>
         </div>
       </section>
-      <section class="hydro-benefits-section">
+      <section id="benefits" class="hydro-benefits-section">
         <div class="hydro-benefits-content">
           <div class="hydro-benefits-header">
             <h1>HydroAlerta +</h1>
@@ -474,7 +495,13 @@
       <p>Bela Cintra, 1445 - São Paulo 2025</p>
     </footer>
   </body>
+
   <script src="assets/carousel.js"></script>
   <script src="assets/quiz.js"></script>
-  <script src="assets/form.js"></script>
+  <script src="assets/menu-mobile.js"></script>
+  <script src="assets/style-bg-color.js"></script>
+  <script
+    src="https://kit.fontawesome.com/6ede03f451.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
