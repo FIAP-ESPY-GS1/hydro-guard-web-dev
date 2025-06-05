@@ -39,6 +39,33 @@
             <li><a href="#benefits">Benefícios</a></li>
           </ul>
         </nav>
+
+        <div class="theme-selector">
+          <button
+            class="theme-dot"
+            id="theme-light"
+            onclick="switchTheme('light')"
+            aria-label="Tema Claro"
+          ></button>
+          <button
+            class="theme-dot"
+            id="theme-dark"
+            onclick="switchTheme('dark')"
+            aria-label="Tema Escuro"
+          ></button>
+          <button
+            class="theme-dot"
+            id="theme-colorblind"
+            onclick="switchTheme('colorblind')"
+            aria-label="Tema Acessível"
+          ></button>
+          <button
+            class="theme-dot"
+            id="theme-earth"
+            onclick="switchTheme('earth')"
+            aria-label="Tema Terra"
+          ></button>
+        </div>
       </div>
     </header>
     <main>
@@ -471,6 +498,7 @@
   <script src="assets/carousel.js"></script>
   <script src="assets/quiz.js"></script>
   <script src="assets/menu-mobile.js"></script>
+  <script src="assets/style-bg-color.js"></script>
   <script
     src="https://kit.fontawesome.com/6ede03f451.js"
     crossorigin="anonymous"
