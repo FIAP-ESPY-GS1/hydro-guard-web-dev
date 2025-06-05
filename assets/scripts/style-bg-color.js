@@ -9,7 +9,7 @@ const setLightTheme = () => {
   document.documentElement.style.setProperty("--color-light-blue-2", "#44b5e7");
   document.documentElement.style.setProperty("--color-dark-blue", "#004d80");
   document.documentElement.style.setProperty("--color-default", "#000000");
-}
+};
 
 const setDarkTheme = () => {
   document.documentElement.style.setProperty("--bg-color", "#1e1e2f");
@@ -22,7 +22,7 @@ const setDarkTheme = () => {
   document.documentElement.style.setProperty("--color-light-blue-2", "#93c5fd");
   document.documentElement.style.setProperty("--color-dark-blue", "#1e40af");
   document.documentElement.style.setProperty("--color-default", "#ffff");
-}
+};
 
 const setColorBlindTheme = () => {
   document.documentElement.style.setProperty("--bg-color", "#ffffff");
@@ -35,7 +35,7 @@ const setColorBlindTheme = () => {
   document.documentElement.style.setProperty("--color-light-blue-2", "#009e73");
   document.documentElement.style.setProperty("--color-dark-blue", "#332288");
   document.documentElement.style.setProperty("--color-default", "#000000");
-}
+};
 
 function setEarthTheme() {
   document.documentElement.style.setProperty("--bg-color", "#fdfaf6");
@@ -49,7 +49,6 @@ function setEarthTheme() {
   document.documentElement.style.setProperty("--color-dark-blue", "#836953");
   document.documentElement.style.setProperty("--color-default", "#3e3e3e");
 }
-
 
 const switchTheme = (mode) => {
   const themeDots = document.querySelectorAll(".theme-dot");
@@ -79,9 +78,8 @@ const switchTheme = (mode) => {
     return;
   }
 
-
   setLightTheme();
 
   const themeLight = document.getElementById("theme-light");
   themeLight.classList.add("active");
-}
+};

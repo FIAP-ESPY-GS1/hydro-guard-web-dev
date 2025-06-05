@@ -51,7 +51,7 @@ main {
 
 .bg-fixed {
   background-color: var(--color-primary);
-  width: 25vw;
+  width: 27vw;
   height: 59%;
   border-radius: 124px 0px 0px 124px;
   position: absolute;
@@ -758,7 +758,7 @@ nav ul li:hover {
 
 .hydro-person-impact-card-2 {
   border-radius: 24px;
-  background: url("./img/impact/hydro_banner.png");
+  background: url("../img/impact/hydro_banner.png");
   background-size: cover;
   height: 100%;
   display: flex;
@@ -846,7 +846,7 @@ nav ul li:hover {
 }
 
 .hydro-benefits-container {
-  background-image: url("./img/benefits/benefits_container.png");
+  background-image: url("../img/benefits/benefits_container.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 30rem;
@@ -935,7 +935,7 @@ nav ul li:hover {
 }
 
 .hydro-benefits-container {
-  background-image: url("./img/benefits/benefits_container.png");
+  background-image: url("../img/benefits/benefits_container.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 30rem;
