@@ -96,6 +96,8 @@
     visibility: visible;
   }
 
+  
+
   .navbar nav {
     display: none;
     flex-direction: column;
@@ -104,7 +106,7 @@
   }
 
   .theme-selector {
-    display: none;
+    display: flex;
   }
 
   /* HOME SECTION */
