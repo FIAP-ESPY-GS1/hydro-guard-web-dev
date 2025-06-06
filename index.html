@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hydro Guard</title>
+
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo_icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/media-queries.css" />
+  </head>
+
+  <body>
+    <div class="bg-fixed"></div>
+
+    <header>
+      <div class="navbar">
+        <img
+          src="assets/img/logo.png"
+          alt="Logo Hydro Guard"
+          class="header-logo"
+        />
+      
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#floods">Enchentes</a></li>
+            <li><a href="#hydro-alert">HydroAlerta+</a></li>
+            <li><a href="#purpose">Propósito</a></li>
+            <li><a href="#impact">Impacto</a></li>
+            <li><a href="#benefits">Benefícios</a></li>
+          </ul>
+        </nav>
+
+        <div class="theme-selector">
+          <button
+            class="theme-dot"
+            id="theme-light"
+            onclick="switchTheme('light')"
+            aria-label="Tema Claro"
+          ></button>
+          <button
+            class="theme-dot"
+            id="theme-dark"
+            onclick="switchTheme('dark')"
+            aria-label="Tema Escuro"
+          ></button>
+          <button
+            class="theme-dot"
+            id="theme-colorblind"
+            onclick="switchTheme('colorblind')"
+            aria-label="Tema Acessível"
+          ></button>
+          <button
+            class="theme-dot"
+            id="theme-earth"
+            onclick="switchTheme('earth')"
+            aria-label="Tema Terra"
+          ></button>
+        </div>
+
+         <div class="menu-hamburger">
+          <i id="hamburger-menu-icon" class="fa-solid fa-bars fa-xl"></i>
+          <i id="close-menu-icon" class="fa-solid fa-xmark fa-2xl"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="home" class="home-section">
+        <div class="home-content">
+          <h1>Proteja-se dos perigos das enchentes</h1>
+          <p>
+            Nosso aplicativo centraliza informações em tempo real sobre
+            enchentes e atua como canal de comunicação direta entre a Defesa
+            Civil e a população.
+          </p>
+          <div class="app-buttons">
+            <div class="app-button">
+              <img
+                src="assets/img/home/apple_icon.png"
+                alt="Ícone da Apple Store"
+              />
+              <span> Download na App Store </span>
+            </div>
+            <div class="app-button">
+              <img
+                src="assets/img/home/google_play_icon.png"
+                alt="Ícone da Google Play"
+              />
+              <span> Download na Google Play </span>
+            </div>
+          </div>
+        </div>
+        <img
+          src="assets/img/home/app_mockup.png"
+          alt="App Mockup"
+          class="home-app-mockup"
+        />
+      </section>
+      <section id="floods" class="floods-section">
+        <h2>Enchentes: O que está em jogo?</h2>
+        <div class="floods-section-content">
+          <div class="floods-carousel-card">
+            <div
+              class="slide active"
+              style="
+                background-image: url('./assets/img/floods/carousel/carousel_1.png');
+              "
+            >
+              <div class="overlay top">
+                <h1>
+                  APÓS ENCHENTE HISTÓRICA,<br />BRASIL CONTINUA SUJEITO A
+                  DESASTRES
+                </h1>
+              </div>
+              <div class="overlay bottom">
+                <img
+                  src="./assets/img/floods/carousel/carousel_logo.png"
+                  alt="Logo"
+                  class="logo"
+                />
+                <span>Deutsche Welle</span>
+              </div>
+            </div>
+            <div
+              class="slide"
+              style="
+                background-image: url('./assets/img/floods/carousel/carousel_2.png');
+              "
+            >
+              <div class="overlay top">
+                <h1>
+                  APÓS ENCHENTE HISTÓRICA,<br />BRASIL CONTINUA SUJEITO A
+                  DESASTRES
+                </h1>
+              </div>
+              <div class="overlay bottom">
+                <img
+                  src="./assets/img/floods/carousel/carousel_logo.png"
+                  alt="Logo"
+                  class="logo"
+                />
+                <span>Deutsche Welle</span>
+              </div>
+            </div>
+            <div
+              class="slide"
+              style="
+                background-image: url('./assets/img/floods/carousel/carousel_3.png');
+              "
+            >
+              <div class="overlay top">
+                <h1>
+                  APÓS ENCHENTE HISTÓRICA,<br />BRASIL CONTINUA SUJEITO A
+                  DESASTRES
+                </h1>
+              </div>
+              <div class="overlay bottom">
+                <img
+                  src="./assets/img/floods/carousel/carousel_logo.png"
+                  alt="Logo"
+                  class="logo"
+                />
+                <span>Deutsche Welle</span>
+              </div>
+            </div>
+          </div>
+          <div class="floods-info-cards">
+            <div class="floods-vertical-info-card">
+              <h4>Informação que não chega</h4>
+              <p>
+                Milhares de brasileiros não têm acesso rápido e claro a
+                instruções de segurança, rotas de fuga ou abrigos. A comunicação
+                falha custa vidas.
+              </p>
+            </div>
+            <div class="floods-vertical-info-card">
+              <h4>Dependência de Prevenção</h4>
+              <p>
+                Apesar de enchentes serem previsíveis, à ausência de
+                planejamento urbano, sistemas de alerta e políticas públicas
+                eficazes agravam seus efeitos
+              </p>
+            </div>
+            <div class="floods-horizontal-info-card">
+              <p>
+                O <strong> HydroAlerta+ </strong> foi concebido para ser muito
+                mais do que um simples aplicativo: é um sistema de proteção
+                inteligente, criado para colocar a vida das pessoas em primeiro
+                lugar.
+              </p>
+              <img
+                src="assets/img/alerta+_icon.png"
+                alt="Ícone do HydroAlerta+"
+                class="floods-horizontal-info-icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="hydro-alert" class="hydro-alert-section">
+        <div class="hydro-alert-content">
+          <div class="hydro-alert-content-features">
+            <h1>HydroAlerta +</h1>
+            <h4>Como ele funciona</h4>
+            <div class="hydro-alert-features-images">
+              <div class="hydro-alert-features-images-info">
+                <img
+                  src="assets/img/hydroalert/feature_4.svg"
+                  alt="Feature 4"
+                  class="hydro-alert-feature-image"
+                />
+                <p>Alertas de enchentes com base em IA</p>
+              </div>
+              <div class="hydro-alert-features-images-info">
+                <img
+                  src="assets/img/hydroalert/feature_2.svg"
+                  alt="Feature 3"
+                  class="hydro-alert-feature-image"
+                />
+                <p>Mapeamento em tempo real</p>
+              </div>
+              <div class="hydro-alert-features-images-info">
+                <img
+                  src="assets/img/hydroalert/feature_3.svg"
+                  alt="Feature 2"
+                  class="hydro-alert-feature-image"
+                />
+                <p>Dicas de prevenção e segurança personalizadas</p>
+              </div>
+              <div class="hydro-alert-features-images-info">
+                <img
+                  src="assets/img/hydroalert/feature_1.svg"
+                  alt="Feature 1"
+                  class="hydro-alert-feature-image"
+                />
+                <p>Modo Offline com dados salvos</p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="assets/img/hydroalert/hydro_alert_mockup.png"
+            alt="HydroAlerta+ Mockup"
+            class="hydro-alert-mockup"
+          />
+        </div>
+      </section>
+      <section id="purpose" class="hydro-purpose-section">
+        <div class="hydro-purpose-content">
+          <div class="hydro-purpose-header">
+            <h1>HydroAlerta +</h1>
+            <h4>Nosso Propósito</h4>
+          </div>
+          <div class="hydro-purpose-content-cards">
+            <div class="hydro-purpose-content-card">
+              <h5>
+                Muitas pessoas acreditam que sabem quais decisões tomar ao
+                enfrentar uma enchente.
+              </h5>
+              <h5>Será que <strong> você </strong> sabe?</h5>
+              <p>
+                Nosso objetivo é que toda a população esteja bem informada.
+                <br /><br />
+                Confira ao lado um breve Quiz que criamos sobre o assunto e
+                teste o seu conhecimento.
+              </p>
+            </div>
+            <div>
+              <div class="quiz-container">
+                <div id="quiz">
+                  <div class="question" id="question"></div>
+                  <div class="options">
+                    <button
+                      class="option"
+                      id="opt0"
+                      onclick="selectOption(0)"
+                    ></button>
+                    <button
+                      class="option"
+                      id="opt1"
+                      onclick="selectOption(1)"
+                    ></button>
+                  </div>
+                </div>
+              </div>
+              <div id="result-container" style="display: none">
+                <div class="result-label">SUA PONTUAÇÃO FINAL FOI DE:</div>
+                <div class="score-box">
+                  <div class="score-number" id="score">0</div>
+                  <div class="score-total">DE UM TOTAL DE 10 PONTOS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="impact" class="hydro-person-impact-section">
+        <div class="hydro-person-impact-content">
+          <div class="hydro-person-impact-header">
+            <h2>Pessoas Impactadas</h2>
+          </div>
+          <div class="hydro-person-impact-cards">
+            <div class="hydro-person-impact-card-container">
+              <div class="hydro-person-impact-card-1">
+                <img
+                  src="assets/img/alerta+_icon.png"
+                  alt="Logo Alerta +"
+                  class="hydro-person-impact-logo"
+                />
+                <h3>
+                  Em cada alerta, <br />
+                  um gesto de cuidado. <br />
+                  Em cada notificação, <br />
+                  uma vida preservada
+                </h3>
+                <h3>
+                  Somos o aliado <br />
+                  da população dos <br />
+                  centros urbanos <br />
+                  de todo país
+                </h3>
+                <div class="hydro-person-impact-card-1-info">
+                  <img
+                    src="assets/img/impact/plus_icon.png"
+                    alt="Pessoas Impactadas"
+                  />
+                  <span>
+                    de 45 mil <br />
+                    outdoors digitais
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="hydro-person-impact-card-container">
+              <div class="hydro-person-impact-card-2"></div>
+            </div>
+            <div class="hydro-person-impact-card-container">
+              <div class="hydro-person-impact-card-3">
+                <h3>
+                  Informações integradas <br />
+                  ao seu dia a dia
+                </h3>
+                <p>
+                  Seremos a sua companhia em todos os circuitos de ônibus das
+                  regiões metropolitanas.
+                </p>
+                <div class="hydro-person-impact-card-3-info">
+                  <img
+                    src="assets/img/impact/plus_icon.png"
+                    alt="Pessoas Impactadas"
+                  />
+                  <span>
+                    de 21 mil <br />
+                    publicações
+                  </span>
+                </div>
+              </div>
+              <img src="assets/img/impact/impact_bus.png" alt="ônibus" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="benefits" class="hydro-benefits-section">
+        <div class="hydro-benefits-content">
+          <div class="hydro-benefits-header">
+            <h1>HydroAlerta +</h1>
+            <h4>Confira alguns dos benefícios oferecidos</h4>
+          </div>
+          <div class="hydro-benefits-container">
+            <div class="hydro-benefits-cards">
+              <div class="hydro-benefits-card">
+                <img
+                  src="assets/img/benefits/benefits_1.png"
+                  alt="Benefício 1"
+                  class="hydro-benefits-image"
+                />
+                <p>Acesso em dois cliques ao painel de dados</p>
+              </div>
+              <div class="hydro-benefits-card">
+                <img
+                  src="assets/img/benefits/benefits_2.png"
+                  alt="Benefício 2"
+                  class="hydro-benefits-image"
+                />
+                <p>Uma comunidade trazendo comentários que agregam</p>
+              </div>
+              <div class="hydro-benefits-card">
+                <img
+                  src="assets/img/benefits/benefits_3.png"
+                  alt="Benefício 3"
+                  class="hydro-benefits-image"
+                />
+                <p>Dicas estratégicas personalizadas</p>
+              </div>
+            </div>
+            <div class="hydro-benefits-text">
+              <h3>
+                E muitas outras funcionalidades <br />
+                que te aguardam no nosso APP
+              </h3>
+            </div>
+            <div class="hydro-benefits-logo">
+              <img
+                src="assets/img/alerta+_icon.png"
+                alt="HydroAlerta+ Logo"
+                class="hydro-benefits-logo-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hydro-contact-section">
+        <div class="hydro-contact-content">
+          <div class="hydro-contact-header">
+            <h1>HydroAlerta +</h1>
+            <h4>Informar é salvar - Compartilhe, use, previna.</h4>
+          </div>
+          <div class="hydro-contact-feedback-card">
+            <h3>A opinião dos usuários</h3>
+            <div class="hydro-contact-feedbacks">
+              <div class="hydro-contact-feedback">
+                <div class="hydro-contact-feedback-user">
+                  <img
+                    src="assets/img/contact/user_1.png"
+                    alt="User feedback 1"
+                  />
+                  <span>Felipe Costa Augusto </span>
+                </div>
+                <p>
+                  <i>
+                    “O aplicativo me ajudou quando eu mais precisei, estava em
+                    outra cidade quando fui pego de surpresa pela chuva”
+                  </i>
+                </p>
+              </div>
+              <div class="hydro-contact-feedback">
+                <div class="hydro-contact-feedback-user">
+                  <img
+                    src="assets/img/contact/user_2.png"
+                    alt="User feedback 2"
+                  />
+                  <span>Aline Costa Araújo </span>
+                </div>
+                <p>
+                  <i>
+                    “Encontrei uma rota que sempre uso quando chove para evitar
+                    pegar enchente no corredor de ônibus”
+                  </i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hydro-contact-card">
+            <h3>Dúvidas, sugestões ou parcerias?</h3>
+            <h6>Nos mande uma mensagem!</h6>
+            <form id="contact-form">
+              <div class="hydro-contact-inputs">
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Nome Completo"
+                  class="hydro-contact-input"
+                  required
+                />
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="seuemailcompleto@exemplo.com.br"
+                  class="hydro-contact-input"
+                  required
+                />
+              </div>
+              <div class="hydro-contact-inputs">
+                <textarea
+                  id="message"
+                  placeholder="Sua Mensagem!"
+                  class="hydro-contact-textarea"
+                  required
+                ></textarea>
+                <button type="submit" class="hydro-contact-button">
+                  Encaminhar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>HydroGuard™</p>
+      <p>Bela Cintra, 1445 - São Paulo 2025</p>
+    </footer>
+  </body>
+
+  <script src="assets/scripts/carousel.js"></script>
+  <script src="assets/scripts/quiz.js"></script>
+  <script src="assets/scripts/menu-mobile.js"></script>
+  <script src="assets/scripts/style-bg-color.js"></script>
+  <script
+    src="https://kit.fontawesome.com/6ede03f451.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
